@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MatchUp</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main>
+    <section class="hero">
+      <h1>MatchUp</h1>
+      <p>A simple dating site demo with a basic matching algorithm.</p>
+      <button id="findMatchBtn">Find my best match</button>
+    </section>
+
+    <section class="cards">
+      <article class="card current-user-card">
+        <h2>Your Profile</h2>
+        <div id="currentUserInfo"></div>
+      </article>
+
+      <article class="card match-card" id="matchResultCard">
+        <h2>Best Match</h2>
+        <div id="matchResult">Press the button to see your match.</div>
+      </article>
+    </section>
+
+    <section class="candidates">
+      <h2>Candidate Profiles</h2>
+      <div id="candidateList" class="grid"></div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
